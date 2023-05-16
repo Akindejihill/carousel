@@ -24,18 +24,11 @@ import Card from "./Card";
 
   //Increments currCardIdx state by 1
   function goForward() {
-    setCurrCardIdx(currCardIdx => {
-      currCardIdx++;
-      return currCardIdx;
-
-    });
+    setCurrCardIdx(currCardIdx => ++currCardIdx);
   }
 
   function goBackwards() {
-    setCurrCardIdx(currCardIdx => {
-      currCardIdx--;
-      return currCardIdx;
-    });
+    setCurrCardIdx(currCardIdx => --currCardIdx);
   }
 
   
